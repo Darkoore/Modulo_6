@@ -2,7 +2,7 @@
 
 ## 📖 Descripción
 
-Este proyecto es una aplicación web desarrollada con Django que permite a los usuarios registrarse, iniciar sesión y gestionar proyectos y tareas de manera eficiente.
+Este proyecto es una aplicación web desarrollada con Django para el bootcamp de alkemy que permite a los usuarios registrarse, iniciar sesión y gestionar proyectos y tareas de manera eficiente.
 
 Cada usuario puede:
 
@@ -183,14 +183,6 @@ Incluye pruebas para:
 * HTML
 
 ---
-
-## ✅ Estado del proyecto
-
-✔ Sistema de autenticación completo
-✔ CRUD de proyectos
-✔ Gestión de tareas
-✔ Panel administrativo personalizado
-✔ Pruebas unitarias implementadas
 
 ## ☠️ SuperUsuario creado
 usuario: admin
