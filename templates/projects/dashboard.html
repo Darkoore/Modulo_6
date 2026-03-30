@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Proyectos</h1>
+
+<a href="{% url 'create_project' %}">Crear</a>
+
+{% for project in object_list %}
+    <h3>{{ project.name }}</h3>
+
+    <a href="{% url 'edit_project' project.id %}">Editar</a>
+    <a href="{% url 'delete_project' project.id %}">Eliminar</a>
+    <a href="{% url 'create_task' project.id %}">Agregar tarea</a>
+
+    <ul>
+        {% for task in project.task_set.all %}
+            <li>{{ task.title }} - {{ task.completed }}</li>
+        {% empty %}
+            <li>No hay tareas</li>
+        {% endfor %}
+    </ul>
+{% endfor %}
+
+{% endblock %}

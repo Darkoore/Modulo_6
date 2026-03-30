@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modulo 6</title>
+</head>
+<body>
+
+<nav>
+    <a href="/">Dashboard</a>
+
+    <form action="{% url 'logout' %}" method="post" style="display:inline;">
+        {% csrf_token %}
+        <button type="submit">Logout</button>
+    </form>
+</nav>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
